@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<!-- Setting up the page -->
+
+<head>
+    <title>Pusheen the Cat</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="top-banner">
+        <img src="http://static.tumblr.com/r9or22v/4G4onrm48/tumblr-banner.png">
+    </div>
+    <div class="instructions">
+        <h3><p>You will be given a random number at the start of the game.</p>
+	<p>There are four pictures of Pusheen below. By clicking on each Pusheen, you will add a specific amount of points to your total score.</p>
+	<p>You win the game by matching your total score to the random number below, and you lose the game if your total score goves above the random number.</p>
+	<p>The value of each Pusheen is hidden from you until you click on it.</p>
+	<p>Each time the game starts, the game will change the values of each Pusheen.</p>
+	</h3>
+    </div>
+    <div class="correct-total">
+        <h2>Number Goal: <span id="number-to-guess"></span>
+</h2>
+    </div>
+
+     <div id="buttons">
+    <img class="cats" id="button1" src="assets/images/pusheen1.png" width="100px" height="100px">
+    <img class="cats" id="button2" src="assets/images/pusheen2.png" width="100px" height="100px">
+    <img class="cats" id="button3" src="assets/images/pusheen3.png" width="100px" height="100px">
+    <img class="cats" id="button4" src="assets/images/pusheen4.png" width="100px" height="100px">
+    </div>
+
+    <div class="scoreboard">
+        <h2>
+        Your total score is: <span id="user-total"></span>
+        <br>Wins: <span id="wins"></span>
+        <br>Losses: <span id="losses"></span>
+        </h2>
+    </div>
+
+
+    <!-- Javascript and jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js">
+
+
+    </script>
+</body>
+
+</html>

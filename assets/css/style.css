@@ -1,0 +1,22 @@
+body {
+
+	color: #68412E;
+    background: #E5C4B4 url(http://static.tumblr.com/r9or22v/2Rwonrm3w/tumblr-background.png);
+    text-align: left;
+    font-family: Arial;
+    font-size: 14px;
+
+}
+
+
+.top-banner {
+	display: block;
+}
+
+.instructions {
+	display: block;
+	background: #F4CEC2;
+	width: 40%;
+	padding: 1em;
+	margin-top: 1em;
+}
