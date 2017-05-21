@@ -4,6 +4,8 @@ var losses = 0;
 var correctTotal;
 var userTotal;
 var catOptions = [4];
+var audioElement = document.createElement("audio");
+        audioElement.setAttribute("src", "assets/dreamfighter.mp3");
 
 $(document).on("click", ".cats", function() {
 
@@ -50,6 +52,7 @@ function checkScore() {
 		setUp();
 	} else if (userTotal === correctTotal) {
 		wins++;
+		audioElement.play();
 		setUp();
 	} else {
 		console.log("No win, no loss. Game continues.")
@@ -59,6 +62,7 @@ function checkScore() {
 	$("#losses").text(losses);
 
 };
+
 
 $(document).ready(setUp);
 	
